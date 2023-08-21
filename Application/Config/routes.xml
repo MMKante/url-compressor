@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+	<route url="/" module="Compressor" action="index" method="GET" />
+	<route url="/" module="Compressor" action="index" method="GET" />
+	<route url="/add" module="Compressor" action="add" method="GET" />
+	<route url="/add" module="Compressor" action="add" method="POST" />
+	<route url="/delete/([0-9]+)" module="Compressor" action="delete" method="GET" vars="id" />
+	<route url="/r/([A-Za-z0-9]+)" module="Compressor" action="redirect" method="GET" vars="compressed_url" />
+
+	<route url="/signup" module="User" action="signup" method="GET" />
+	<route url="/signup" module="User" action="signup" method="POST" />
+	<route url="/login" module="User" action="login" method="POST" />
+	<route url="/logout" module="User" action="logout" method="GET" />
+</routes>
